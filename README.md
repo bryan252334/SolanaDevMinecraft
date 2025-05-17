@@ -195,6 +195,8 @@ because it is public, there is no need to identify yourself, just do the work of
 # apache2 config
 
    exit
+
+#
    
    nano /etc/apache2/apache2.conf
 
@@ -238,14 +240,16 @@ PHP
 
 ![image](https://github.com/user-attachments/assets/3808718f-a04c-48f1-b4cf-7cde0e76b7f7)
 
-       sudo usermod -aG docker www-data
+#
 
+       sudo usermod -aG docker www-data
+#
        sudo nano /etc/sudoers
 
  # Allow members of group sudo to execute any command
  
         %sudo   ALL=(ALL:ALL) ALL
-
+#
         www-data ALL=(ALL) NOPASSWD: /usr/bin/docker
 # See sudoers(5) for more information on "@include" directives:
 
